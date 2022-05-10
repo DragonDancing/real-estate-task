@@ -79,7 +79,7 @@ def get_sales(format='csv'):
     if format == 'csv':
         sales.to_csv('output/sales.csv')
         return 'output/sales.csv'
-    elif format == 'paraquet':
+    elif format == 'parquet':
         sales.to_parquet('output/sales.parquet')
         return 'output/sales.parquet'
     else:
